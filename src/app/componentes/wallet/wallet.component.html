@@ -1,91 +1,40 @@
-<!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" (onclick)="w3_open()"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right"><img src="assets/images/bitcoin.png" class="w3-circle w3-margin-right" style="width:46px"></span>
-</div>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-col s4">
-      <img src="assets/images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
-    </div>
-    <div class="w3-col s8 w3-bar">
-      <span>Bienvenido, <strong>Mike</strong></span><br>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
-    </div>
-  </div>
-  <hr>
-  <div class="w3-container">
-    <h5>WalletUDG</h5>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Views</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Traffic</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
-  </div>
-</nav>
-
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" (onclick)="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px;margin-top:43px;">
 
   <!-- Header -->
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> Mi WalletUDG</b></h5>
+    <h5><b><i class="fa fa-btc"></i> Mi Wallet</b></h5>
   </header>
 
   <div class="w3-row-padding w3-margin-bottom">
     <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>52</h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Messages</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <div class="w3-container w3-blue w3-padding-16">
-        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>99</h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Views</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
       <div class="w3-container w3-teal w3-padding-16">
-        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-left"><i class="fa fa-credit-card w3-xxxlarge"></i></div>
         <div class="w3-right">
-          <h3>23</h3>
+          <h3>$8,200</h3>
         </div>
         <div class="w3-clear"></div>
-        <h4>Shares</h4>
+        <h4>Saldo Actual</h4>
       </div>
     </div>
     <div class="w3-quarter">
       <div class="w3-container w3-orange w3-text-white w3-padding-16">
-        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-left"><i class="fa fa-arrow-up w3-xxxlarge"></i></div>
         <div class="w3-right">
-          <h3>50</h3>
+          <h3>$5,200</h3>
         </div>
         <div class="w3-clear"></div>
-        <h4>Users</h4>
+        <h4>Ingresos</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-arrow-down w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>$6,300</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Egresos</h4>
       </div>
     </div>
   </div>
@@ -93,42 +42,87 @@
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-twothird">
-        <h5>Transacciones</h5>
+        <h5>Ingresos</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td><i class="fa fa-arrow-up w3-text-blue w3-large"></i></td>
+            <td>2915154 - Coordinación de Tecnologías de Información</td>
+            <td><i>$1,200</i></td>
           </tr>
           <tr>
-            <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
-            <td>Database error.</td>
-            <td><i>15 mins</i></td>
+            <td><i class="fa fa-arrow-up w3-text-red w3-large"></i></td>
+            <td>2951849 - Coordinación de Servicio Social</td>
+            <td><i>$800</i></td>
           </tr>
           <tr>
-            <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
-            <td>New record, over 40 users.</td>
-            <td><i>17 mins</i></td>
+            <td><i class="fa fa-arrow-up w3-text-yellow w3-large"></i></td>
+            <td>2954530 - Coordinación de Patrimonio</td>
+            <td><i>$300</i></td>
           </tr>
           <tr>
-            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
-            <td>New comments.</td>
-            <td><i>25 mins</i></td>
+            <td><i class="fa fa-arrow-up w3-text-red w3-large"></i></td>
+            <td>2915154 - Coordinación de Tecnologías de Información</td>
+            <td><i>$250</i></td>
           </tr>
           <tr>
-            <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
-            <td>Check transactions.</td>
-            <td><i>28 mins</i></td>
+            <td><i class="fa fa-arrow-up w3-text-blue w3-large"></i></td>
+            <td>2951849 - Coordinación de Servicio Social</td>
+            <td><i>$1800</i></td>
           </tr>
           <tr>
-            <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
-            <td>CPU overload.</td>
-            <td><i>35 mins</i></td>
+            <td><i class="fa fa-arrow-up w3-text-red w3-large"></i></td>
+            <td>2954530 - Coordinación de Patrimonio</td>
+            <td><i>#400</i></td>
           </tr>
           <tr>
-            <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
-            <td>New shares.</td>
-            <td><i>39 mins</i></td>
+            <td><i class="fa fa-arrow-up w3-text-green w3-large"></i></td>
+            <td>2915154 - Coordinación de Tecnologías de Información</td>
+            <td><i>$530</i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-twothird">
+        <h5>Egresos</h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><i class="fa fa-arrow-down w3-text-blue w3-large"></i></td>
+            <td>2915154 - Coordinación de Tecnologías de Información</td>
+            <td><i>$1,200</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-arrow-down w3-text-red w3-large"></i></td>
+            <td>2951849 - Coordinación de Servicio Social</td>
+            <td><i>$800</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-arrow-down w3-text-yellow w3-large"></i></td>
+            <td>2954530 - Coordinación de Patrimonio</td>
+            <td><i>$300</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-arrow-down w3-text-red w3-large"></i></td>
+            <td>2915154 - Coordinación de Tecnologías de Información</td>
+            <td><i>$250</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-arrow-down w3-text-blue w3-large"></i></td>
+            <td>2951849 - Coordinación de Servicio Social</td>
+            <td><i>$1800</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-arrow-down w3-text-red w3-large"></i></td>
+            <td>2954530 - Coordinación de Patrimonio</td>
+            <td><i>#400</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-arrow-down w3-text-green w3-large"></i></td>
+            <td>2915154 - Coordinación de Tecnologías de Información</td>
+            <td><i>$530</i></td>
           </tr>
         </table>
       </div>
@@ -136,81 +130,54 @@
   </div>
   <hr>
   <div class="w3-container">
-    <h5>Countries</h5>
-    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-      <tr>
-        <td>United States</td>
-        <td>65%</td>
-      </tr>
-      <tr>
-        <td>UK</td>
-        <td>15.7%</td>
-      </tr>
-      <tr>
-        <td>Russia</td>
-        <td>5.6%</td>
-      </tr>
-      <tr>
-        <td>Spain</td>
-        <td>2.1%</td>
-      </tr>
-      <tr>
-        <td>India</td>
-        <td>1.9%</td>
-      </tr>
-      <tr>
-        <td>France</td>
-        <td>1.5%</td>
-      </tr>
-    </table><br>
-    <button class="w3-button w3-dark-grey">More Countries  <i class="fa fa-arrow-right"></i></button>
-  </div>
-  <hr>
-  <div class="w3-container">
-    <h5>Recent Users</h5>
+    <h5>Catalogo de Canje</h5>
     <ul class="w3-ul w3-card-4 w3-white">
       <li class="w3-padding-16">
-        <img src="assets/images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Mike</span><br>
+        <img src="assets/images/canje.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Servicio Social I</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="assets/images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Jill</span><br>
+        <img src="assets/images/canje.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Servicio Social II</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="assets/images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Jane</span><br>
+        <img src="assets/images/canje.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Servicio Social III</span><br>
       </li>
     </ul>
   </div>
   <hr>
 
   <div class="w3-container">
-    <h5>Cuentas Recientes</h5>
+    <h5>Utimas Transacciones</h5>
     <div class="w3-row">
       <div class="w3-col m2 text-center">
         <img class="w3-medium" src="assets/images/qr.png" style="width:96px;height:96px">
       </div>
       <div class="w3-col m10 w3-container">
         <h4>2915154 <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
-        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+        <p>Coordinación de Tecnologías de Información.</p>
+        <button class="w3-button w3-dark-grey">Transferir nuevamente <i class="fa fa-arrow-right"></i></button>
+        <br>
       </div>
     </div>
-
+    <br>
     <div class="w3-row">
       <div class="w3-col m2 text-center">
         <img class="w3-medium" src="assets/images/qr.png" style="width:96px;height:96px">
       </div>
       <div class="w3-col m10 w3-container">
         <h4>2951849 <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+        <p>Coordinación de Servicio Social.</p>
+        <button class="w3-button w3-dark-grey">Transferir nuevamente <i class="fa fa-arrow-right"></i></button>
+        <br>
       </div>
     </div>
   </div>
   <br>
   <div class="w3-container w3-dark-grey w3-padding-32">
     <div class="w3-row">
-      <div class="w3-container w3-third"></div>      
+      <div class="w3-container w3-third"></div>
     </div>
   </div>
   <!-- End page content -->

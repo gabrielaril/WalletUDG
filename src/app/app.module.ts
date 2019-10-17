@@ -9,6 +9,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { EnviarComponent } from './componentes/enviar/enviar.component';
 import { RecibirComponent } from './componentes/recibir/recibir.component';
 import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado.component';
+import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado
     LoginComponent,
     EnviarComponent,
     RecibirComponent,
-    NoEncontradoComponent
-  ],
+    NoEncontradoComponent,
+    CabeceraComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule

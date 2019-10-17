@@ -1,11 +1,66 @@
-<header id="main-header" class="py-2 bg-info text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h4>
-          Login
-        </h4>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+  <br/>
+  <br/>
+  <br/>
+  <section id="login">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card shadow rounded">
+            <div class="card-header">
+              <h4>Iniciar sesión</h4>
+            </div>
+            <div class="card-body">
+              <form (ngSubmit)="login(loginForm)">
+                <label for="user" class="font-weight-bolder colorTitleCustom">
+                  Código:
+                </label>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input name="user" class="form-control">
+                  </div> <!-- input-group.// -->
+                  <div class="invalid-feedback">
+                    Código requerido
+                  </div>
+                </div> <!-- form-group// -->
+                <label for="pass" class="font-weight-bolder colorTitleCustom">
+                  Contraseña:
+                </label>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input type="password" name="pass" class="form-control">
+                  </div> <!-- input-group.// -->
+                  <div class="invalid-feedback">
+                    Contraseña requerida
+                  </div>
+                </div> <!-- form-group// -->
+                <button class="btn btn-primary btn-block shadow" type="submit">
+                  Entrar
+                </button>
+              </form>
+            </div>
+            <div class="card-footer">
+              <div style="text-align: center">
+                <a href="" style="color: mediumseagreen"><strong>Recuperar contraseña</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+  <br>
+  <div class="w3-container w3-dark-grey w3-padding-32">
+    <div class="w3-row">
+      <div class="w3-container w3-third"></div>
+    </div>
   </div>
-</header>
+  <!-- End page content -->
+</div>
