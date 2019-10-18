@@ -1,6 +1,6 @@
-export class UserLogin {
-    user: string;
-    pass: string;
+export class Usuario {
+    codigo: string;
+    password: string;
 
     constructor(obj?: any) {
         Object.assign(this, obj);
