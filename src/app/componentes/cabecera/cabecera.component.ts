@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabeceraComponent implements OnInit {
 
+  menuPress = "block";
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  w3_open() {
+    if (this.menuPress == "block") {
+      this.menuPress = "none";
+    } else {
+      this.menuPress = "block";
+    }
+  }
 }
